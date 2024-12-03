@@ -31,7 +31,7 @@
   
         selected.appendChild(titleElement);
         selected.appendChild(textElement);
-      });
+      })
 
       loader.classList.toggle("hidden");
 
@@ -69,7 +69,7 @@
       
         //append the clone to the list
         materialList.appendChild(clone);  
-      });
+      })
       loader.classList.toggle("hidden");
     } )
     .catch(error =>{
