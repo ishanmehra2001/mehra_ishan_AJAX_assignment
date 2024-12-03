@@ -13,7 +13,7 @@
   //functions
   function loadInfoBoxes() {
     
- loader.classList.toggle("hidden");
+
 
     //make AJAX call here
     fetch("https://swiftpixel.com/earbud/api/infoboxes")
@@ -28,12 +28,15 @@
   
         const textElement = document.createElement('p');
         textElement.textContent = infoBox.description;
+
+        
   
         selected.appendChild(titleElement);
         selected.appendChild(textElement);
+        
       })
 
-      loader.classList.toggle("hidden");
+     
 
     })
     .catch(error =>{
@@ -67,6 +70,7 @@
         const materialDescription = clone.querySelector('.material-description');
         materialDescription.textContent = material.description;
       
+
         //append the clone to the list
         materialList.appendChild(clone);  
       })
