@@ -30,6 +30,9 @@
         textElement.textContent = infoBox.description;
 
         
+
+
+        
   
         selected.appendChild(titleElement);
         selected.appendChild(textElement);
